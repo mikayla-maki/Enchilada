@@ -24,14 +24,9 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
-/**
- * Get port from environment and store in Express.
- */
+var port = process.env.PORT || 3000;
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
-
+if(app.get('env') === 'development' ) {
 /**
  * Create HTTP server.
  */
@@ -41,4 +36,14 @@ const server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 server.listen(process.env.PORT || 3000, () => console.log(`API running on localhost:${port}`));
+} else {
+/**
+ * Get port from environment and store in Express.
+ */
 
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server has been activated");
+});
+
+
+}
