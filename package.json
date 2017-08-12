@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "node_modules/.bin/ng build --prod --aot=false",
+    "start": "node_modules/.bin/ng build --prod --aot=false --no-progress",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
