@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 
 // Get our API routes
 const api = require('./server/routes/api');
@@ -47,3 +48,5 @@ app.listen(process.env.PORT || 3000, function(){
 
 
 }
+
+

@@ -8,6 +8,12 @@ import { CrawlerComponent } from './crawler/crawler.component';
 import {environment} from "../environments/environment";
 import { HomeComponent } from './home/home.component';
 
+import { FormsModule } from '@angular/forms';
+import { CrawlerService } from './crawler-service/crawler.service';
+import {Http, HttpModule} from "@angular/http";
+import {D3Service} from "d3-ng2-service";
+
+
 const appRoutes: Routes = [
   {
     path: 'crawl/:hostname',
@@ -31,12 +37,14 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot(
       appRoutes,
       {enableTracing: environment.production} // <-- debugging purposes only
-    )
+    ),
+    FormsModule
   ],
-  providers: [],
+  providers: [CrawlerService, D3Service],
   bootstrap: [AppComponent]
 })
 export class AppModule {

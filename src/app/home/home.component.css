@@ -31,6 +31,11 @@
   outline: 0;
 }
 
+.text-input.error {
+  border-color: #f04736;
+  outline: 0;
+}
+
 .button-input {
   background-color: #5dd6ff;
   border: 1px solid #58caf0;

@@ -1,6 +1,6 @@
 <div class="background">
   <div class="input-area">
-    <input class="text-input"  placeholder="Enter a website to crawl"/>
-    <button class="button-input" >Crawl</button>
+    <input class="text-input" [ngClass]="{'error': error}" [(ngModel)]="targetSite" name="url" placeholder="Enter a website to crawl"/>
+    <button class="button-input" (click)="crawl()">Crawl</button>
   </div>
 </div>

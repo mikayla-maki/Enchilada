@@ -1,3 +1,13 @@
-<p>
-  crawler works!
-</p>
+<div class="background">
+  <div class="content">
+    <div *ngIf="done == false" [ngClass]="{'small':crawledData.length > 0}" class="spinner">
+      Crawling {{targetSite}}<span class="dots">{{dots}}</span>
+    </div>
+    <div *ngIf="fail == true" [ngClass]="{'small':crawledData.length > 0}" class="spinner">
+      Sorry, we couldn't crawl {{targetSite}} right now, please try again later.
+    </div>
+    <div [hidden]="crawledData.length == 0" id="d3-target" class="d3-target">
+
+    </div>
+  </div>
+</div>

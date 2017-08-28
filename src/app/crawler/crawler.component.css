@@ -1,0 +1,79 @@
+.background {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  width: 90vw;
+  min-height: 90vh;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  font-size: 3em;
+  font-family: sans-serif;
+  align-self: center;
+  justify-self: center;
+  margin: 0 auto;
+  transition: all 0.2s ease-out;
+  text-align: center;
+}
+
+.spinner.small {
+  font-size: 1.5em;
+  align-self: flex-start;
+  margin: 10px auto;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dots {
+  position: absolute;
+}
+
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
