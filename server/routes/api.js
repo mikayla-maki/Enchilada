@@ -5,7 +5,7 @@ var url = require('url');
 var through = require("through");
 var mongoose = require('mongoose');
 
-const CrawlKit = require('./../../crawlkit/src/index');
+const CrawlKit = require('./../../crawlkit-2/src/index');
 const SameDomainLinkFinder = require('../finders/SameDomainLinkFinder');
 const A11yDeveloperToolsRunner = require('crawlkit-runner-accessibility-developer-tools');
 

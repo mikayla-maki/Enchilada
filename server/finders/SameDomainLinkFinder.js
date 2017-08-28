@@ -1,4 +1,4 @@
-const genericAnchors = require('../../crawlkit/finders/genericAnchors');
+const genericAnchors = require('../../crawlkit-2/finders/genericAnchors');
 const urijs = require("urijs");
 
 class SameDomainLinkFinder {
