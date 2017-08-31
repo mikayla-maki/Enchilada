@@ -10,8 +10,7 @@ const freeport = require('freeport');
 const auth = require('http-auth');
 const http = require('http');
 const httpProxy = require('http-proxy');
-const phantomjs = require('phantomjs-prebuilt');
-
+const phantomjs = require('../../phantomjs/lib/phantomjs');
 const HeadlessError = require('node-phantom-simple/headless_error');
 const TimeoutError = require('callback-timeout/errors').TimeoutError;
 const errors = require('../src/errors.js');

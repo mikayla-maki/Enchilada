@@ -3,7 +3,7 @@
 const poolModule = require('generic-pool');
 const async = require('async');
 const driver = require('node-phantom-simple');
-const phantomjs = require('phantomjs-prebuilt');
+const phantomjs = require('../../phantomjs/lib/phantomjs');
 const debug = require('debug');
 
 module.exports = (logger, crawlerInstance, prefix) => {
