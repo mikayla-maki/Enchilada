@@ -1,6 +1,6 @@
 'use strict'; // eslint-disable-line
 const pkg = require('../../../package.json');
-const phantomjs = require('../../../../phantomjs/lib/phantomjs');
+const phantomjs = require('phantomjs-prebuilt');
 
 /**
  * @param {!Scope} scope The crawl scope object.
