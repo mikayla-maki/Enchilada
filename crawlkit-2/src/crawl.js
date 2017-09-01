@@ -18,7 +18,7 @@ const l = require('./logger');
  * @private
  * @type {String}
  */
-const defaultAbsoluteTo = 'http://';
+// const defzaultAbsoluteTo = 'http://';
 
 module.exports = (crawlerInstance, writeResult, runnerKey, finderKey) => {
   const suffix = crawlerInstance.name ? `:${crawlerInstance.name}` : '';
